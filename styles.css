@@ -354,13 +354,12 @@ footer p {
 }
 
 .chat-widget {
-  position: fixed;
-  right: 14px;
-  bottom: 14px;
-  z-index: 30;
+  position: static;
+  width: 100%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 0;
 }
 
@@ -435,10 +434,6 @@ footer p {
     font-size: 1.15rem;
   }
 
-  .chat-widget {
-    right: 18px;
-    bottom: 18px;
-  }
 }
 
 @keyframes spin {
