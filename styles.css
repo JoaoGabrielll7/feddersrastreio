@@ -309,6 +309,14 @@ h1 {
   margin: 22px 0 12px;
 }
 
+.contact-hint {
+  margin: 6px 0 2px;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
 .btn-download {
   border: 0;
   text-decoration: none;
@@ -354,12 +362,13 @@ footer p {
 }
 
 .chat-widget {
-  position: static;
-  width: 100%;
-  margin-top: 10px;
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 30;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 0;
 }
 
@@ -434,6 +443,10 @@ footer p {
     font-size: 1.15rem;
   }
 
+  .chat-widget {
+    right: 18px;
+    bottom: 18px;
+  }
 }
 
 @keyframes spin {
